@@ -1,22 +1,22 @@
 import React from "react";
 
-function Media(props) {
-  if (props.mediatype === "video") {
+function Media({ mediatype, url }) {
+  if (mediatype === "video") {
     return (
       <iframe
         title="Nasa Video"
         className="video"
         width="500"
         height="300"
-        src={props.url}
+        src={url}
       ></iframe>
     );
   }
-  if (props.mediatype === "image") {
+  if (mediatype === "image") {
     return (
       <img
         style={{ width: "500px", height: "300", maxWidth: "100%" }}
-        src={props.url}
+        src={url}
         alt="Nasa"
       />
     );
