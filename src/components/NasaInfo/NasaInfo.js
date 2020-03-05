@@ -1,5 +1,18 @@
 import React from "react";
 import Media from "../Media";
+import styled from "styled-components";
+
+const Title = styled.h2`
+  font-size: 32px;
+  color: white;
+  margin-bottom: 10px;
+`;
+
+const Explanation = styled.p`
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+`;
 
 function NasaInfo(props) {
   let { title, media_type, explanation, url } = props.data;
@@ -9,9 +22,9 @@ function NasaInfo(props) {
   return (
     <div className="Info">
       <div className="container">
-        <h2 className="title">{title}</h2>
+        <Title>{title}</Title>
         <Media mediatype={media_type} url={url} />
-        <p className="explanation">{explanation}</p>
+        <Explanation>{explanation}</Explanation>
       </div>
     </div>
   );

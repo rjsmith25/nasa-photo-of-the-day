@@ -12,23 +12,3 @@ header > .container {
   width: 100px;
   height: 100px;
 }
-
-/* card */
-
-.title,
-.explanation {
-  color: white;
-  margin-bottom: 10px;
-}
-
-.title {
-  font-size: 32px;
-}
-
-.explanation {
-  font-size: 16px;
-}
-
-.video {
-  margin-bottom: 10px;
-}
